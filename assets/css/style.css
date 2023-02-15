@@ -5,6 +5,7 @@
 }
 body{
     font-family: cairo;
+    background-color:#fcf7f1 ;
     
 
 }
@@ -21,7 +22,7 @@ body{
     background-color:#fcf7f1 ;
 }
 .navbar-brand{
-    padding-left: 350px;
+    padding-left: 300px;
 }
 img{
     display: block;
@@ -39,3 +40,18 @@ header{
     background-color:#fcf7f1;
     
 }
+
+/* end index page style*/
+
+/*start product page style*/
+.product-image{
+	width: 200px;
+	height: 200px;
+    border-radius: 8px;
+    
+    
+}
+.cart-color{
+    background-color: #ebddd2;
+}
+
