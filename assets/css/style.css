@@ -1,0 +1,41 @@
+@font-face {
+    font-family: cairo;
+    src: url(../fonts/Cairo-VariableFont_slnt\,wght.ttf);
+
+}
+body{
+    font-family: cairo;
+    
+
+}
+.navbar-nav {
+    padding-left: 220px;
+    
+}
+
+.container-fluid{
+    background-color:#ebddd2 ;
+    
+}
+.bg-beige{
+    background-color:#fcf7f1 ;
+}
+.navbar-brand{
+    padding-left: 350px;
+}
+img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search input:focus-visible{
+    outline: none;
+}
+.search input::placeholder{
+font-size: 14px;
+font-weight: 500;
+}
+header{
+    background-color:#fcf7f1;
+    
+}
