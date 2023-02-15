@@ -24,7 +24,7 @@ body{
 .navbar-brand{
     padding-left: 300px;
 }
-img{
+.head-img{
     display: block;
   margin-left: auto;
   margin-right: auto;
@@ -40,6 +40,40 @@ header{
     background-color:#fcf7f1;
     
 }
+/*satrt best sellers section style  */
+
+.best-sellers-heading{
+    text-align: center;
+    color :#5c4a3e;
+}
+section.best-sellers{
+    background-color: #e3dad5;
+  
+}
+section.best-sellers .nav-link{
+    border: 2px solid  #5c4a3e;
+    color :#5c4a3e;
+ }
+section.best-sellers .nav-link:hover{
+   border: 1px solid  #cfc8b6;
+}
+section.best-sellers .nav-link.active{
+   background-color: #5c4a3e;
+   color: #cfc8b6;
+   border: 2px solid  #cfc8b6;
+ }
+ .row{
+    text-align: center;
+ }
+
+.best-sel{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+  margin-top: 20px;
+ margin-right: 50px;
+  
+ }
 
 /* end index page style*/
 
