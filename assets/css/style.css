@@ -88,4 +88,7 @@ section.best-sellers .nav-link.active{
 .cart-color{
     background-color: #ebddd2;
 }
+a.product:active {
+    background-color: yellow;
+  }
 
