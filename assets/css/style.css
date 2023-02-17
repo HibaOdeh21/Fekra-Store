@@ -13,7 +13,10 @@ body{
     padding-left: 220px;
     
 }
-
+.nav-link{
+    color: #5c4a3e;
+     font-weight: 500;
+}
 .container-fluid{
     background-color:#ebddd2 ;
     
@@ -87,8 +90,23 @@ section.best-sellers .nav-link.active{
 }
 .cart-color{
     background-color: #ebddd2;
+    color: #5c4a3e;
 }
-a.product:active {
-    background-color: yellow;
-  }
+.card h5{
+    padding-top: 5px;
+    font-weight:500;
+    color: #5c4a3e;
+}
+.card p{
+    color: #5c4a3e;
+}
+.button {
+    padding-top:1px;
+    margin-left: 56px;
+    width: 70%;
+    border-radius: 8px;
+   justify-content: center;
+   background-color: #ebddd2;
+   color: #5c4a3e;
+}
 
