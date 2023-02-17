@@ -39,7 +39,14 @@ font-weight: 500;
 header{
     background-color:#fcf7f1;
     
+    
 }
+.carousel-item{
+    height: 70vh;
+    
+    
+}
+
 /*satrt best sellers section style  */
 
 .best-sellers-heading{
@@ -47,7 +54,7 @@ header{
     color :#5c4a3e;
 }
 section.best-sellers{
-    background-color: #e3dad5;
+    background-color: #ebddd2;
   
 }
 section.best-sellers .nav-link{
