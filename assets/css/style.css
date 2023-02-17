@@ -116,4 +116,16 @@ section.best-sellers .nav-link.active{
    background-color: #ebddd2;
    color: #5c4a3e;
 }
+.product-image {
+    transition: transform .2s; 
+    
+    margin: 0 auto;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.5); 
+  }
+  .blog-sidebar-list{
+    cursor: pointer;
+  }
 
