@@ -91,6 +91,105 @@ section.best-sellers .nav-link.active{
     transition-duration: 0.5s;
   }
 
+/*end best sellers section style  */
+
+/*start footer style*/
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #92725d;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:80px;
+	bottom: -10px;
+	background-color: #5c4a3e;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ffffff;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.about-us{
+    color: #ffffff;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #5c4a3e;
+	background-color: #cfc8b6;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/*end footer style*/
 /* end index page style*/
 
 /*start product page style*/
@@ -121,6 +220,13 @@ section.best-sellers .nav-link.active{
    justify-content: center;
    background-color: #ebddd2;
    color: #5c4a3e;
+  
+}
+
+.button:hover{
+    background-color:#bd9173;
+      transition: 0.5s;
+
 }
 .product-image {
     transition: transform .2s; 
@@ -134,4 +240,4 @@ section.best-sellers .nav-link.active{
   .blog-sidebar-list{
     cursor: pointer;
   }
-
+/*end product page style*/
