@@ -77,13 +77,18 @@ section.best-sellers .nav-link.active{
  }
 
 .best-sel{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 20px;
   margin-top: 20px;
- margin-right: 50px;
+ margin-right: 10px;
   
  }
+ 
+ .best a img:hover {
+    opacity: 0.3;
+    transition-duration: 0.5s;
+  }
 
 /* end index page style*/
 
