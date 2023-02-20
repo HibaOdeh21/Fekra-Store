@@ -90,6 +90,10 @@ section.best-sellers .nav-link.active{
     opacity: 0.3;
     transition-duration: 0.5s;
   }
+  .nav-link:hover,.nav-link.active{
+    background-color:#ddb295;
+      transition: 0.5s;
+  }
 
 /*end best sellers section style  */
 
