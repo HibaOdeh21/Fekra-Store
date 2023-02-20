@@ -13,6 +13,8 @@ body{
     padding-left: 220px;
     
 }
+
+
 .nav-link{
     color: #5c4a3e;
      font-weight: 500;
@@ -25,7 +27,7 @@ body{
     background-color:#fcf7f1 ;
 }
 .navbar-brand{
-    padding-left: 300px;
+    padding-left: 400px;
 }
 .head-img{
     display: block;
@@ -58,7 +60,7 @@ header{
     color :#5c4a3e;
 }
 section.best-sellers{
-    background-color: #ebddd2;
+    background-color:#ebddd2;
   
 }
 section.best-sellers .nav-link{
