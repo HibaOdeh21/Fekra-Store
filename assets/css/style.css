@@ -251,6 +251,197 @@ section.best-sellers .nav-link.active{
   }
 
 /*end best sellers section style  */
+/* Start Arraivals */
+.arrivals {
+    background-color: #fcf7f1;
+  }
+  .arrivals .container{
+  background-color: #fcf7f1;
+  margin-bottom: 0px;
+  
+  }
+  .arrivals .btn{
+  margin-left: 43%;
+  font-family: "Cairo", sans-serif;
+  font-size: 25px;  
+  padding: 15px 15px;
+  border: 1px solid #bb9b70e7;
+  color: #3d301ee7;
+    
+  }
+  .arrivals .btn:hover{
+    background-color: #d3a467e7;
+    color: #473823b0;
+    
+  }
+  .arrivals .arrivals-title{
+    font-family: "Cairo", sans-serif;
+   color: rgb(97, 76, 64);
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  }
+  .arrivals .arrivals-title::after{
+    content: "";
+    background-color: #bd946d;
+    display: block;
+    height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+  }
+  .owl-carousel .owl{
+    border: 1px solid #ccbba4e7;
+    border-radius: 20px;
+  }
+  .arrivals-img{
+    width: 100%;
+    transition: transform 0.5s;
+    border-radius: 20px;
+  }
+  .arrivals .arrivals-product .img-over {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+  .arrivals .arrivals-product .img-over i {
+    font-size: 20px;
+    color: rgb(97, 76, 64);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+  }
+  
+  .arrivals .arrivals-product .img-over:hover i {
+    opacity: 1;
+    visibility: visible;
+  }
+  .arrivals .arrivals-product:hover img {
+    transform: scale(1.1);
+  }
+  .product-info{
+    font-family: "Cairo", sans-serif;
+    color: rgba(26, 13, 5, 0.925);
+  padding:10px 12px;
+  }
+  .product-info a {
+    font-size: 20px;
+    color: #1d1306e7;
+    font-weight: 400;
+  }
+  
+  
+  .product-info a:hover{
+  color:#af7c39;
+  }
+  .owl-nav{
+    text-align: right;
+  
+  }
+  
+  
+  .owl-nav .owl-next{
+    position: absolute;
+    top: -64px;
+    margin-right: 15px;
+  
+  }
+  .owl-nav  .owl-prev{
+      position: absolute;
+      top: -64px;
+      right: 5px;  
+  
+  }
+  .owl-nav span{
+    font-size: 25px;
+  border: 1px solid #bb9b70e7;
+  padding: 0 10px;
+  }
+  
+  
+  /*  Start reviews */
+  .customer-reviews {
+     margin-top: 50px;
+  background-image: url(/img/My\ project-1.png);   padding: 20px;
+  background-repeat:no-repeat ;
+  background-size: cover;
+  height: 100vh;
+  }
+  
+  .customer-reviews .reviews-title{
+    color: rgb(97, 76, 64);
+   text-align: center;
+   font-weight: 400;
+   font-size: 40px;
+  margin: 0
+  ;}
+  
+  .customer-reviews .reviews-title::after{
+    content: "";
+    background-color: #bd946d;
+    display: block;
+    height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+  }
+  
+  .customer-reviews .row-reviews{
+  margin-top: 10%;
+  }
+  .col-md-4{
+    margin: 40px auto;
+  }
+  .profile{
+    padding:70px 10px 10px ;
+    background-color: #e0c39c;
+  
+  }
+  .profile img{
+  top: -60px;
+  position: absolute;
+  left: calc(50% - 60px);
+  border: 10px solid #e0c39c;
+    }
+  
+    .rev-img{
+      width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  
+    }
+    
+    .blockquote::before{
+      content: "";
+      font-size: 50px;
+      position: relative;
+      color: #af7c39;
+      line-height: 10px;
+      bottom: -15px;
+      left: 5px;
+      }
+  .blockquote::after{
+  content: "";
+  font-size: 50px;
+  position: relative;
+  color: #af7c39;
+  line-height: 10px;
+  bottom: -15px;
+  left: 5px;
+  }
+  
+  .profile:hover{
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  /* End reviews  */
+  
+  
+  
+  
+  
 /* Start Contact Us */
 .contact {
     background-color: #fff;
