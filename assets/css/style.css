@@ -13,7 +13,12 @@ body{
     padding-left: 220px;
     
 }
-
+.head-img-1{
+    padding-left: 600px;
+}
+.welcoming{
+    padding-left: 550px;
+}
 
 .nav-link{
     color: #5c4a3e;
@@ -34,16 +39,10 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-.search input:focus-visible{
-    outline: none;
-}
-.search input::placeholder{
-font-size: 14px;
-font-weight: 500;
-}
+
 header{
     background-color:#fcf7f1;
-    
+ 
     
 }
 .carousel-item{
@@ -51,9 +50,160 @@ header{
     
     
 }
+.register{
+    margin-left: 70px;
+    background-color: #DCA47F;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 5px 10px;
+	color: white;
+	display: inline-block;
+    padding-left: 50px;
+    padding-right:50px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.register:hover{
+    background-color:#ddb295;
+    transition: 0.5s;
+}
 
 
-/*satrt best sellers section style  */
+.login{
+    background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+    animation:animationForm 0.25s;
+    transition: 0.25 ease-in-out;
+}
+@keyframes  animationForm{
+from{
+    transform: scale(0);
+}
+to{
+    transform: scale(1);
+}
+}
+.login-contents{
+    height: 650px;
+	width: 500px;
+	background-color:white;
+	text-align: center;
+	padding: 60px;
+	position: relative;
+	border-radius: 4px;
+}
+input {
+	margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 2px solid gray;
+    display: inline-block;
+    border-radius: 10px;
+    
+}
+.Submit-button{
+    margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 2px solid gray;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #eee7dd;
+}
+.Submit-button:hover{
+    background-color:#ddb295;
+      transition: 0.5s;
+}
+.signup-button{
+    margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 2px solid gray;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #eee7dd;
+}
+.signup-button:hover{
+    background-color:#ddb295;
+      transition: 0.5s;
+}
+.signup{
+    background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.signup-contents{
+    height: 650px;
+	width: 500px;
+	background-color:white;
+	text-align: center;
+	padding: 60px;
+	position: relative;
+	border-radius: 4px;
+}
+input {
+	margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 2px solid gray;
+    display: inline-block;
+    border-radius: 10px;
+    
+}
+.close-login {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	
+}
+.newSignup-button{
+    margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 2px solid gray;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #eee7dd;
+}
+.newSignup-button:hover{
+    background-color:#ddb295;
+      transition: 0.5s;
+}
+.close-signup {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	
+}
+/*end login section*/
+
+
+/*start best sellers section style  */
 
 .best-sellers-heading{
     text-align: center;
@@ -63,9 +213,11 @@ section.best-sellers{
     background-color:#ebddd2;
   
 }
+
 section.best-sellers .nav-link{
     border: 2px solid  #5c4a3e;
     color :#5c4a3e;
+  
  }
 section.best-sellers .nav-link:hover{
    border: 1px solid  #cfc8b6;
@@ -95,6 +247,7 @@ section.best-sellers .nav-link.active{
   .nav-link:hover,.nav-link.active{
     background-color:#ddb295;
       transition: 0.5s;
+      border-radius: 10px;
   }
 
 /*end best sellers section style  */
@@ -113,7 +266,7 @@ body{
 	max-width: 1170px;
 	margin:auto;
 }
-.row{
+footer .row{
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -247,3 +400,42 @@ ul{
     cursor: pointer;
   }
 /*end product page style*/
+/*meadoa querry*/
+@media only screen and (max-width: 400px) {
+    section.best-sellers .nav-link{
+        padding: 4.5px;
+      margin-top: 10px;
+    }
+   .head-img-1{
+padding-left:20px;
+
+
+   }
+   .welcoming{
+    padding-left: 20px; color:#5c4a3e; font-weight:500; font: size 20px;
+}
+.head-img-2{
+    height: 100%;
+}.prod-list{
+    display:table-row-group;
+  
+}
+.prod-it{
+    display:table-footer-group;
+ 
+}
+.card-it{
+
+}
+
+.prod-media{
+    display: block;
+    padding-left: 8px;
+   
+  }
+  .footer-col h4::before{
+	
+	left:130px;
+
+}}
+    

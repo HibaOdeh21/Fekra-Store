@@ -15,3 +15,20 @@ for(let link of nav_link){
         link.classList.add("active")
     }
 }
+
+document.getElementById('login-button').addEventListener("click", function() {
+    document.querySelector('.login').style.display = "flex";
+});
+
+document.querySelector('.close-login').addEventListener("click", function() {
+    document.querySelector('.login').style.display = "none";
+});
+
+document.getElementById('signup-button').addEventListener("click", function() {
+    document.querySelector('.signup').style.display = "flex";
+    
+});
+
+document.querySelector('.close-signup').addEventListener("click", function() {
+    document.querySelector('.signup').style.display = "none";
+});
