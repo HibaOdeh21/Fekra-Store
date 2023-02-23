@@ -13,7 +13,12 @@ body{
     padding-left: 220px;
     
 }
-
+.head-img-1{
+    padding-left: 600px;
+}
+.welcoming{
+    padding-left: 550px;
+}
 
 .nav-link{
     color: #5c4a3e;
@@ -44,6 +49,24 @@ header{
     height: 70vh;
     
     
+}
+.register{
+    margin-left: 70px;
+    background-color: #DCA47F;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 5px 10px;
+	color: white;
+	display: inline-block;
+    padding-left: 50px;
+    padding-right:50px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.register:hover{
+    background-color:#ddb295;
+    transition: 0.5s;
 }
 
 
