@@ -786,3 +786,14 @@ padding-left:20px;
 
 }
 
+.prod-media{
+    display: block;
+    padding-left: 8px;
+   
+  }
+  .footer-col h4::before{
+	
+	left:130px;
+
+}}
+    
