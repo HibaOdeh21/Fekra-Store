@@ -43,7 +43,7 @@ font-weight: 500;
 }
 header{
     background-color:#fcf7f1;
-    
+ 
     
 }
 .carousel-item{
@@ -51,6 +51,14 @@ header{
     
     
 }
+.head-img-1{
+padding-left: 600px;
+
+}
+.welcoming{
+    padding-left: 520px; color:#5c4a3e; font-weight:600;
+}
+
 
 
 /*satrt best sellers section style  */
@@ -63,9 +71,11 @@ section.best-sellers{
     background-color:#ebddd2;
   
 }
+
 section.best-sellers .nav-link{
     border: 2px solid  #5c4a3e;
     color :#5c4a3e;
+  
  }
 section.best-sellers .nav-link:hover{
    border: 1px solid  #cfc8b6;
@@ -113,7 +123,7 @@ body{
 	max-width: 1170px;
 	margin:auto;
 }
-.row{
+footer .row{
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -247,3 +257,42 @@ ul{
     cursor: pointer;
   }
 /*end product page style*/
+/*meadoa querry*/
+@media only screen and (max-width: 400px) {
+    section.best-sellers .nav-link{
+        padding: 4.5px;
+      margin-top: 10px;
+    }
+   .head-img-1{
+padding-left:20px;
+
+
+   }
+   .welcoming{
+    padding-left: 20px; color:#5c4a3e; font-weight:500; font: size 20px;
+}
+.head-img-2{
+    height: 100%;
+}.prod-list{
+    display:table-row-group;
+  
+}
+.prod-it{
+    display:table-footer-group;
+ 
+}
+.card-it{
+
+}
+
+.prod-media{
+    display: block;
+    padding-left: 8px;
+   
+  }
+  .footer-col h4::before{
+	
+	left:130px;
+
+}}
+    
