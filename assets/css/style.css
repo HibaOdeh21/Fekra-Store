@@ -267,7 +267,7 @@ section.best-sellers .nav-link{
  }
 section.best-sellers .nav-link:hover{
    border: 1px solid  #ddb295;
-   border: 1px solid  #ddb295;
+   
 }
 section.best-sellers .nav-link.active{
    background-color: #cdb19e;
