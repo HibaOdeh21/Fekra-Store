@@ -55,7 +55,7 @@ header{
 }
 .register{
     margin-left: 70px;
-    background-color: #DCA47F;
+    background-color: #cdb19e;
 	border-radius: 30px;
 	text-decoration: none;
 	padding: 5px 10px;
@@ -102,8 +102,11 @@ to{
 	position: relative;
 	border-radius: 4px;
 }
+.form-input{
+    margin-top: 3px;
+}
 input {
-	margin: 15px auto;
+	margin: 5px auto;
 	display: block;
 	width: 50%;
 	padding: 8px;
@@ -113,7 +116,7 @@ input {
     
 }
 .Submit-button{
-    margin: 15px auto;
+    margin: 5px auto;
 	display: block;
 	width: 50%;
 	padding: 8px;
@@ -127,7 +130,7 @@ input {
       transition: 0.5s;
 }
 .signup-button{
-    margin: 15px auto;
+    margin: 5px auto;
 	display: block;
 	width: 50%;
 	padding: 8px;
@@ -188,6 +191,7 @@ input {
     display: inline-block;
     border-radius: 20px;
     background-color: #eee7dd;
+    margin-top: 2px;
 }
 .newSignup-button:hover{
     background-color:#ddb295;
@@ -241,7 +245,7 @@ section.best-sellers .nav-link:hover{
    border: 1px solid  #cfc8b6;
 }
 section.best-sellers .nav-link.active{
-   background-color: #ddb295;
+   background-color: #cdb19e;
    color: #cfc8b6;
    border: 2px solid  #cfc8b6;
  }
@@ -263,7 +267,7 @@ section.best-sellers .nav-link.active{
     transition-duration: 0.5s;
   }
   .nav-link:hover,.nav-link.active{
-    background-color:#ddb295;
+    background-color:#cdb19e;
       transition: 0.5s;
       border-radius: 10px;
   }

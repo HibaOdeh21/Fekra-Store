@@ -18,10 +18,13 @@ for(let link of nav_link){
 
 document.getElementById('login-button').addEventListener("click", function() {
     document.querySelector('.login').style.display = "flex";
+    document.querySelector('.form').style.display = "none";
+
 });
 
 document.querySelector('.close-login').addEventListener("click", function() {
     document.querySelector('.login').style.display = "none";
+    document.querySelector('.form').style.display = "flex";
 });
 document.getElementById('signup-button').addEventListener("click", function() {
     document.querySelector('.signup').style.display = "flex";
