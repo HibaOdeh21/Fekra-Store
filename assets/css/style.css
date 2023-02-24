@@ -193,6 +193,21 @@ input {
     background-color:#ddb295;
       transition: 0.5s;
 }
+.returnToLogin{
+    margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 2px solid gray;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #eee7dd;
+    cursor: pointer;
+}
+.returnToLogin:hover{
+    background-color:#ddb295;
+      transition: 0.5s;
+}
 .close-signup {
 	position: absolute;
 	top: 0;
@@ -218,7 +233,7 @@ section.best-sellers{
 }
 
 section.best-sellers .nav-link{
-    border: 2px solid  #5c4a3e;
+    border: 2px solid  #ddb295;
     color :#5c4a3e;
   
  }
@@ -226,7 +241,7 @@ section.best-sellers .nav-link:hover{
    border: 1px solid  #cfc8b6;
 }
 section.best-sellers .nav-link.active{
-   background-color: #5c4a3e;
+   background-color: #ddb295;
    color: #cfc8b6;
    border: 2px solid  #cfc8b6;
  }
@@ -976,10 +991,6 @@ padding-left:20px;
     display:table-footer-group;
  
 }
-.card-it{
-
-}
-
 .prod-media{
     display: block;
     padding-left: 8px;
