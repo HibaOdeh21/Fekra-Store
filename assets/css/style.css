@@ -20,14 +20,16 @@ a{
    margin: auto;
    margin: auto;
 }
-.welcoming{
-    margin: auto;
-    margin: auto;
-}
+ .welcoming{
+    color:#5c4a3e; font-weight:400; 
+    font-family: "Cairo", sans-serif;
+   font-size: 30px; 
+    padding-left:34%; }
 
 .nav-link{
     color: #5c4a3e;
      font-weight: 500;
+     font-family: "cairo",sans-serif;
 }
 .container-fluid{
     background-color:#ebddd2 ;
@@ -55,7 +57,11 @@ header{
     
     
 }
+a ,h3,p,h4,h2,h5,button{
+    font-family: "cairo",sans-serif;   
+}
 .register{
+    font-family: "cairo",sans-serif;
     margin-left: 70px;
     background-color: #DCA47F;
 	border-radius: 30px;
@@ -225,10 +231,24 @@ input {
 
 /*start best sellers section style  */
 
+
 .best-sellers-heading{
-    text-align: center;
-    color :#5c4a3e;
-}
+    font-family: "Cairo", sans-serif;
+   color: rgb(97, 76, 64);
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  
+  }
+  .best-sellers-heading::after{
+    content: "";
+    background-color: #bd946d;
+    display: block;
+    height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+ margin-bottom: 15px;
+  }
 section.best-sellers{
     background-color:#ebddd2;
   
@@ -236,7 +256,9 @@ section.best-sellers{
 
 section.best-sellers .nav-link{
     border: 2px solid  #ddb295;
-    color :#5c4a3e;
+    
+    font-family: "Cairo", sans-serif;
+    color: rgb(97, 76, 64);
   
  }
 section.best-sellers .nav-link:hover{
@@ -281,13 +303,20 @@ section.best-sellers .nav-link.active{
   margin-bottom: 0px;
   
   }
+  .arrivals-product{
+width: 260px;
+height: 260px;
+
+  }
   .arrivals .btn{
-  margin-left: 43%;
+  margin-left: 45%;
+  margin-top: 5%;
   font-family: "Cairo", sans-serif;
   font-size: 25px;  
   padding: 15px 15px;
   border: 1px solid #bb9b70e7;
   color: #3d301ee7;
+  background-color: #fcf7f1;
     
   }
   .arrivals .btn:hover{
@@ -361,7 +390,18 @@ section.best-sellers .nav-link.active{
     text-align: right;
   
   }
-  
+  .owl{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    place-content:center;
+    margin-top: 10px;
+    margin-right: 10px;
+   
+  }
+.all{
+   padding-left: 50px;
+}
   
   .owl-nav .owl-next{
     position: absolute;
@@ -600,7 +640,10 @@ textarea.in {
   pointer-events: none;
   z-index: 500;
 }
+.footer{
+    font-family: "Cairo", sans-serif;
 
+}
 .input-container span:before,
 .input-container span:after {
   content: "";
@@ -982,7 +1025,10 @@ padding-left:20px;
 
    }
    .welcoming{
-    padding-left: 20px; color:#5c4a3e; font-weight:500; font: size 20px;
+   color:#5c4a3e; 
+   font-family: "Cairo", sans-serif;
+  font-size: 15px; 
+  padding-left: 20%;
 }
 .head-img-2{
     height: 100%;
