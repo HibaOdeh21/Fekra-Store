@@ -32,3 +32,6 @@ document.getElementById('signup-button').addEventListener("click", function() {
 document.querySelector('.close-signup').addEventListener("click", function() {
     document.querySelector('.signup').style.display = "none";
 });
+
+
+  

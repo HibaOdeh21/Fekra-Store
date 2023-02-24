@@ -14,10 +14,10 @@ body{
     
 }
 .head-img-1{
-    padding-left: 600px;
+   margin: auto;
 }
 .welcoming{
-    padding-left: 550px;
+    margin: auto;
 }
 
 .nav-link{
@@ -220,12 +220,12 @@ section.best-sellers .nav-link{
   
  }
 section.best-sellers .nav-link:hover{
-   border: 1px solid  #cfc8b6;
+   border: 1px solid  #ddb295;
 }
 section.best-sellers .nav-link.active{
-   background-color: #5c4a3e;
-   color: #cfc8b6;
-   border: 2px solid  #cfc8b6;
+   background-color: #ddb295;
+   color: #5c4a3e;
+   border: 2px solid  #ddb295;
  }
  .row{
     text-align: center;
@@ -424,9 +424,7 @@ padding-left:20px;
     display:table-footer-group;
  
 }
-.card-it{
 
-}
 
 .prod-media{
     display: block;
