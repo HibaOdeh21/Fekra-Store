@@ -15,8 +15,10 @@ body{
 }
 .head-img-1{
    margin: auto;
+   margin: auto;
 }
 .welcoming{
+    margin: auto;
     margin: auto;
 }
 
@@ -220,6 +222,7 @@ section.best-sellers .nav-link{
   
  }
 section.best-sellers .nav-link:hover{
+   border: 1px solid  #ddb295;
    border: 1px solid  #ddb295;
 }
 section.best-sellers .nav-link.active{
