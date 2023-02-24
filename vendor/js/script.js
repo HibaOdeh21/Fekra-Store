@@ -23,15 +23,15 @@ document.getElementById('login-button').addEventListener("click", function() {
 document.querySelector('.close-login').addEventListener("click", function() {
     document.querySelector('.login').style.display = "none";
 });
-
 document.getElementById('signup-button').addEventListener("click", function() {
     document.querySelector('.signup').style.display = "flex";
     
 });
-
 document.querySelector('.close-signup').addEventListener("click", function() {
     document.querySelector('.signup').style.display = "none";
 });
 
-
-  
+document.getElementById('returnToLogin').addEventListener("click", function() {
+    document.querySelector('.login').style.display = "flex";
+    
+});
