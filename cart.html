@@ -9,20 +9,18 @@
     <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
     <!--fontawseom-->
     <link rel="stylesheet" href="vendor/css/all.min.css">
-        <!-- owel carousel -->
-<link rel="stylesheet" href="/vendor/css/owl.carousel.min.css">
-<link rel="stylesheet" href="/vendor/css/owl.theme.default.min.css">
+
 
     <!--customized-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body  id="cart">
+<body  id="cart" class="cart-body">
     <!--start navbar-->
    <nav class="navbar navbar-expand-lg bg-white">
     <div class="container-fluid">
         
         <a class="register text-black " id="login-button" text-decoration="none" ref=#> تسجيل دخول </a>
-        
+        <a href="cart.html" class="shop-btn button-text cart-color text-black"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
           <!--navbar contents-->
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-3 mb-2 mb-lg-0 nav-ul  ">
@@ -46,16 +44,105 @@
           
           <!--name of the page-->
         </ul>
-        <a class="navbar-brand " href="#"> متجر فكرة</a>
+        <a class="navbar-brand " href="index.html"> متجر فكرة</a>
       
       </div>
     </div>
   </nav>
    <!--end navbar-->
+   <!--start cart-->
+   <div class="tbb container my-4">
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <th scope="col">اسم المنتج</th>
+                <th scope="col">الكمية</th>
+                <th scope="col">السعر</th>
+                <th scope="col">صورة المنتج</th>
+
+            </tr>
+        </thead>
+        <tbody class="cart-item">
+            <tr class="cart-row">
+              
+                
+                <td class="cart-item-title">شمع معطر حجم كبير</td>
+                <td class="cart-quantity">
+                  <input class="cart-quantity-input" type="number" value="1">
+                </td>
+                <td class="cart-price">20.0₪</td>
+                <td class="img">
+                    <img src="img/p2.jpeg" class="cart-img"></td>
+                <td>
+                    
+                    <a href="#" class="btn btn-danger">حذف</a>
+
+              
+            </tr>
+            <tr class="cart-row">
+              
+                
+                <td class="cart-item-title"> لوحة خط حجم وسط</td>
+                <td class="cart-quantity">
+                  <input class="cart-quantity-input" type="number" value="1" >
+                </td>
+                <td class="cart-price">30.0₪</td>
+                <td class="img">
+                    <img src="img/best-paint-1.png" class="cart-img"></td>
+                <td>
+                    
+                    <a href="#" class="btn btn-danger">حذف</a>
+
+              
+            </tr>
+            <tr class="cart-row">
+              
+                
+                <td class="cart-item-title">خاتم فضي</td>
+                <td class="cart-quantity">
+                  <input class="cart-quantity-input" type="number" value="1">
+                </td>
+                <td class="cart-price">5.0₪</td>
+                <td class="img">
+                    <img src="img/acc6.jpeg" class="cart-img"></td>
+                <td>
+                    
+                    <a href="#" class="btn btn-danger">حذف</a>
+
+                
+            </tr>
+            <tr class="cart-row">
+                
+                <td class="cart-item-title">فواحات برائحة الفانيلا</td>
+                <td class="cart-quantity">
+                  <input class="cart-quantity-input" type="number" value="1">
+                </td>
+                <td class="cart-price">20.0₪</td>
+                <td class="img">
+                    <img src="img/fawwahat-2.png" class="cart-img"></td>
+                <td>
+    
+                    <a href="#" class="btn btn-danger">حذف</a>
+
+            </tr>
+        </tbody>
+    </table>
+    <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">₪75.0</span>
+  </div>
+  <br/>
+  
+  <button class="btn btn-primary btn-purchase" type="button">إتمام عملية الشراء</button>
+</div>
+</div>
+
+   <!--end cart-->
    <!--start footer-->
    <footer class="footer " style="background-color:#bd946d; " >
     <div class="container"  >
-      <div class="row">
+      <div >
         <div class="footer-col">
           <h4 style="color:#614c40;"> تابعنا على مواقع التواصل الاجتماعي</h4>
           <div class="social-links">
@@ -145,8 +232,7 @@
 <script src="vendor/js/bootstrap.min.js"></script>
 <!--jquery-->
 <script src="vendor/js/jquery-3.6.3.min.js"></script>
-   <!-- owel carousel -->
-   <script src="/vendor/js/owl.carousel.min.js"></script>
+ 
    <!-- Script -->
 <script src="assets/JS/main.js"></script>
 <script src="vendor/js/script.js"></script>
