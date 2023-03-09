@@ -40,6 +40,22 @@ document.getElementById('returnToLogin').addEventListener("click", function() {
 });
 /*finish login page*/
 
+/*start cart icon page*/
+document.getElementById('shopping-basket').addEventListener("click", function() {
+  document.querySelector('.cart-page').style.display = "flex";
+});
+document.querySelector('.close-cart').addEventListener("click", function() {
+  document.querySelector('.cart-page').style.display = "none";
+});
+const buttons = document.querySelectorAll('.shop-item-button');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelector('.cart-page').style.display = "flex";
+    });
+});
+/*end cart icon page*/
+
 /*start cart page*/
 if (document.readyState == 'loading') {
   document.addEventListener('DOMContentLoaded', ready)
@@ -86,7 +102,7 @@ function quantityChanged(event){
 }
 function addToCartClicked(event) {
   var button = event.target
-  var shopItem = button.parentElement
+  var shopItem = button.parentElement.parentElement
   var title = shopItem.getElementsByClassName('card-title')[0].innerText
   var price = shopItem.getElementsByClassName('price')[0].innerText
   var imageSrc = shopItem.getElementsByClassName('product-image')[0].src
@@ -94,27 +110,31 @@ function addToCartClicked(event) {
   updateCartTotal()
 }
 function addItemToCart(title, price, imageSrc) {
-  var cartRow = document.createElement('div')
+  var cartRow = document.createElement('tr')
   cartRow.classList.add('cart-row')
   var cartItems = document.getElementsByClassName('cart-item')[0]
   var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
   for (var i = 0; i < cartItemNames.length; i++) {
       if (cartItemNames[i].innerText == title) {
-          alert('This item is already added to the cart')
+          alert('هذا المنتج موجود مسبقا في السلة')
           return
       }
   }
-  var cartRowContents = `
-  <td class="cart-item-title"> ${title}</td>
-                <td class="cart-quantity">
-                  <input class="cart-quantity-input" type="number" value="1">
-                </td>
-                <td class="cart-price">${price}</td>
-                <td class="img">
-                    <img src="${imageSrc}" class="cart-img"></td>
-                <td>
-                    
-                    <a href="#" class="btn btn-danger">حذف</a>`
+  var cartRowContents =`
+   <tr class="cart-row">
+                
+  <td class="cart-item-title">${title}</td>
+  <td class="cart-quantity">
+    <input class="cart-quantity-input" type="number" value="1">
+  </td>
+  <td class="cart-price">${price}</td>
+  <td class="img">
+      <img src="${imageSrc}" class="cart-img"></td>
+  <td>
+
+      <a href="#" class="btn btn-danger">حذف</a>
+
+</tr> `
   cartRow.innerHTML = cartRowContents
   cartItems.append(cartRow)
   cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
