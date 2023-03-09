@@ -34,7 +34,6 @@ a{
 }
 .container-fluid{
     background-color:#ebddd2 ;
-    
 }
 .bg-beige{
     background-color:#fcf7f1 ;
@@ -47,9 +46,7 @@ a{
   margin-left: auto;
   margin-right: auto;
 }
-.shop-btn{
- position: fixed;
-}
+
 header{
     background-color:#fcf7f1;
  
@@ -82,7 +79,6 @@ a ,h3,p,h4,h2,h5,button{
     background-color:#ddb295;
     transition: 0.5s;
 }
-
 
 .login{
     background-color: rgba(0, 0, 0, 0.8);
@@ -235,6 +231,50 @@ input {
 }
 /*end login section*/
 
+/*cart icon section*/
+.fa-shopping-basket{
+  cursor: pointer;
+}
+.cart-page{
+background-color: rgba(0, 0, 0, 0.8);
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+display: none;
+justify-content:left;
+align-items: center;
+  animation:animationForm1 0.25s;
+  transition: 0.25 left;
+}
+@keyframes  animationForm1{
+  from{
+      transform: scale(0);
+  }
+  to{
+      transform: scale(1);
+  }
+  }
+  .cart-contents{
+    height: 650px;
+    width: 600px;
+    background-color:white;
+    text-align: center;
+    padding: 60px;
+    position: relative;
+    border-radius: 4px;
+  }
+  .close-cart {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 42px;
+    color: #333;
+    transform: rotate(45deg);
+    cursor: pointer;
+    
+  }
+/*end cart icon section*/
 
 /*start best sellers section style  */
 
@@ -1087,6 +1127,16 @@ body {
   width: 75px;
   height: auto;
   border-radius: 10px;
+}
+.btn-purchase,.btn-purchase2{
+  margin-left: 35%;
+margin-left: 3%
+}
+.btn-purchase:hover{
+  background-color:#cdb19e;
+}
+.btn-purchase2:hover{
+  background-color:#cdb19e;
 }
 
 /*end cart style*/

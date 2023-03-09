@@ -17,8 +17,9 @@
    
    <nav class="navbar navbar-expand-lg bg-white " style="color: #5c4a3e;" >
     <div class="container-fluid">
+        <a id="shopping-basket" class="shop-btn button-text cart-color text-black"><i class="fa-solid fas fa-shopping-basket fa-xl"></i></a>
         <a class="register text-black " id="login-button" text-decoration="none" ref=#> تسجيل دخول </a>
-        <a href="cart.html" class="shop-btn button-text cart-color text-black"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
+        
       <!--navbar contents-->
       <div class="collapse navbar-collapse  " id="navbarSupportedContent">
         <ul class="navbar-nav me-3 mb-2 mb-lg-0  nav-ul ">
@@ -54,7 +55,7 @@
         <div class="row prod-media">
             
           <!--start candle products-->
-        <div class="col-lg-9 div1 single prod-it" style="padding-left: 30px;" style="display: block;" id="candle">
+        <div class="candels col-lg-9 div1 single prod-it" style="padding-left: 30px;" style="display: block;" id="candle">
                 
                 <!-- Sorting by <div class="row"> -->
                <div>&nbsp;</div>
@@ -68,10 +69,10 @@
                                 <h5 class="card-title"><b>  مجموعة شمع 3 قطع </b></h5>
                                 <p class="card-text small"></p>
                                 <p class="price">السعر ₪30.00</p>
-                                <a  type="button" class="btn shop-item-button button-text cart-color text-black "><i class="fa fa-shopping-cart" aria-hidden="true"></i> إضافة الى السلة</a>
+                                <button id="shop-item-button" type="button" class="btn shop-item-button button-text cart-color text-black "><i class="fa fa-shopping-cart" aria-hidden="true"></i> إضافة الى السلة</button>
                             </div>
                         </div>
-                    </div>
+                    </div> 
 
                     <div class="col-sm-3 col-md-6 col-lg-4">
                         <div class="card">
@@ -80,7 +81,7 @@
                                 <h5 class="card-title"><b>شمع معطر حجم كبير </b></h5>
                                 <p class="card-text small"></p>
                                  <p class="price">السعر ₪20.00</p>
-                                <a  type="button" class="btn button-text cart-color text-black shop-item-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> إضافة الى السلة</a>
+                                 <button id="shop-item-button" type="button" class="btn shop-item-button button-text cart-color text-black "><i class="fa fa-shopping-cart" aria-hidden="true"></i> إضافة الى السلة</button>
                             </div>
                         </div>
                     </div>
@@ -92,7 +93,7 @@
                                 <h5 class="card-title"><b> شمع معطر حجم صغير</b></h5>
                                 <p class="card-text small"></p>
                                 <p class="price">السعر ₪15.00</p>
-                                <a  type="button" class="btn button-text cart-color text-black shop-item-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> إضافة الى السلة</a>
+                                <a id="shop-item-button" type="button" class="btn button-text cart-color text-black shop-item-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> إضافة الى السلة</a>
                             </div>
                         </div>
                     </div>
@@ -111,7 +112,7 @@
                                 <h5 class="card-title"><b>شمع ديكور </b></h5>
                                 <p class="card-text small"></p>
                                 <p class="price">السعر ₪15.00</p>
-                                <a type="button" class="btn button-text cart-color text-black shop-item-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> إضافة الى السلة</a>
+                                <a id="shop-item-button" type="button" class="btn button-text cart-color text-black shop-item-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> إضافة الى السلة</a>
                             </div>
                         </div>
                     </div>
@@ -190,7 +191,7 @@
             </div>
             <!--END  <div class="col-lg-9">-->
               <!--start لوحات الخط-->
-              <div class="col-lg-9 div2 single prod-it" style="padding-left: 30px; display: none;" >
+              <div class="paintings col-lg-9 div2 single prod-it" style="padding-left: 30px; display: none;">
                 
                 <!-- Sorting by <div class="row"> -->
                  <div>&nbsp;</div>
@@ -325,7 +326,7 @@
 
             </div>
              <!--start اكسسوارات -->
-            <div class="col-lg-9 div3 single prod-it" style="padding-left: 30px; display: none;"  >
+            <div class="accss col-lg-9 div3 single prod-it" style="padding-left: 30px; display: none;"  >
 
               <!-- Sorting by <div class="row"> -->
                <div>&nbsp;</div>
@@ -460,7 +461,7 @@
 
           </div>
            <!--start  مباخر و فواحات -->
-          <div class="col-lg-9 div4 single prod-it " style="padding-left: 30px; display: none;" >
+          <div class="scents col-lg-9 div4 single prod-it " style="padding-left: 30px; display: none;" >
                 
             <!-- Sorting by <div class="row"> -->
              <div>&nbsp;</div>
@@ -595,7 +596,7 @@
 
         </div>
          <!--start  كفرات-->
-        <div class="col-lg-9 div5 single prod-it" style="padding-left: 30px; display: none;" >
+        <div class="covers col-lg-9 div5 single prod-it" style="padding-left: 30px; display: none;" >
                 
           <!-- Sorting by <div class="row"> -->
            <div>&nbsp;</div>
@@ -863,6 +864,49 @@
 </div>
 </div>
 <!--end signup file form-->
+
+<!--start shoping cart-->
+<div class="cart-page">
+    <div class="cart-contents">
+
+  <div class="close-cart">+</div>
+   <!--start cart-->
+   <div class="tbb container my-4">
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <th scope="col">اسم المنتج</th>
+                <th scope="col">الكمية</th>
+                <th scope="col">السعر</th>
+                <th scope="col">صورة المنتج</th>
+
+            </tr>
+        </thead>
+        <tbody class="cart-item">
+            
+        </tbody>
+    </table>
+    <br/>
+    <div class="cart-total">
+      <strong class="cart-total-title">المجموع</strong>
+      <span class="cart-total-price">₪0.0</span>
+  </div>
+  <br/>
+  <br/>
+  
+  <button class="btn btn-primary btn-purchase" type="button"><i class="far fa-credit-card"></i>إتمام عملية الشراء</button>
+   <a href="products.html" class="btn btn-primary btn-purchase2" type="button"><i class="fas fa-shopping-cart	"></i>  إكمال التسوق</a>
+</div>
+</div>
+
+   <!--end cart-->
+   
+
+</div>
+</div>
+<!--end shopping cart-->
+
 <!--bootstrap-->
 <script src="vendor/js/bootstrap.min.js"></script>
 <!--jquery-->
