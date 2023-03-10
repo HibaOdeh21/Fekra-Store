@@ -111,7 +111,9 @@ to{
 }
 .form-input{
     margin-top: 3px;
+  
 }
+
 input {
 	margin: 5px auto;
 	display: block;
@@ -1263,6 +1265,13 @@ section.upcomming_work_shop .upcomming-item img {
       .table td {
         line-height: 70px;
       }
+      .nav-link{
+  font-size: 15px;
+}
+.login-button{
+  font-size: 15px;
+}
+      /*start cart style*/
       
       body {
         background-color: #f6e8d7!important;
@@ -1289,6 +1298,7 @@ section.upcomming_work_shop .upcomming-item img {
         background-color: #cfc8b6;
       }
       /*end cart style*/
+ 
 
       .welcoming:hover
       {-webkit-animation: jello-horizontal 0.9s both;
@@ -1415,3 +1425,103 @@ section.upcomming_work_shop .upcomming-item img {
  * ---------------------------------------------- */
 
  @-webkit-keyframes color-change-2x{0%{background:#ebddd2}100%{background:#c8a686}}@keyframes color-change-2x{0%{background:#ebddd2}100%{background:#c8a686}}
+  .col-pay{
+    padding-left: 150px;
+  }
+
+  
+  
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 px;
+  }
+  
+  .container-pay {
+width:80%;
+justify-content: center;
+   
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .label-pay {
+    text-align:right;  margin-bottom:0px; 
+    color:#5c4a3e; 
+    font-family: "Cairo", sans-serif;
+   font-size: 15px; 
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn-pay {
+    background-color: #cdb19e;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: "Cairo", sans-serif;
+   
+  }
+  
+  .btn-pay:hover {
+    background-color: #bd946d;
+   color:white;
+    border:2px solid white;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 400px) {
+    .row-pay {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+    
+  
+  }
+  .pay-head{
+    font-family: "Cairo", sans-serif;
+    color: rgb(97, 76, 64);
+   text-align: center;
+   font-weight: 400;
+   font-size: 30px;
+  }
+  .pay-head::after{
+    content: "";
+    background-color: #bd946d;
+    display: block;
+    height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+ margin-bottom: 15px;
+  }
+ 
+  .pay-div{
+    direction: rtl;   display: flex; padding-right:15px; justify-content: center;
+  }
+      /*end cart style* /
+      /*animation*/
+     

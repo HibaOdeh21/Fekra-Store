@@ -1,3 +1,5 @@
+
+/* product page*/
 jQuery(function() {
     jQuery(".allbutton").click(function(){
         jQuery(".single").show();
@@ -19,7 +21,14 @@ for(let link of nav_link){
 document.getElementById('login-button').addEventListener("click", function() {
     document.querySelector('.login').style.display = "flex";
     document.querySelector('.form').style.display = "none";
-
+});
+document.getElementById('login-button').addEventListener("click", function() {
+  document.querySelector('.login').style.display = "flex";
+  document.querySelector('.pay-form').style.display = "none";
+});
+document.querySelector('.close-login').addEventListener("click", function() {
+  document.querySelector('.login').style.display = "none";
+  document.querySelector('.payment').style.display = "flex";
 });
 
 document.querySelector('.close-login').addEventListener("click", function() {
@@ -104,14 +113,15 @@ function quantityChanged(event){
   }
   updateCartTotal()
 }
+
 function addToCartClicked(event) {
   var button = event.target
-  var shopItem = button.parentElement
-  var title = shopItem.getElementsByClassName('card-title')[0].innerText
-  var price = shopItem.getElementsByClassName('price')[0].innerText
-  var imageSrc = shopItem.getElementsByClassName('product-image')[0].src
-  addItemToCart(title, price, imageSrc)
-  updateCartTotal()
+  var shopItem = button.parentElement;
+  var title = shopItem.getElementsByClassName('card-title')[0].innerText;
+  var price = shopItem.getElementsByClassName('price')[0].innerText;
+  var imageSrc = shopItem.getElementsByClassName('product-image')[0].src;
+  addItemToCart(title, price, imageSrc);
+  updateCartTotal();
 }
 function addItemToCart(title, price, imageSrc) {
   var cartRow = document.createElement('tr')
@@ -162,5 +172,10 @@ function addItemToCart(title, price, imageSrc) {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '₪' + total
 }
+function fun() {  
+  
+  
+  alert ("تمت عملية الطلب بنجاح");  
+}  
 /*finish cart page*/
   
