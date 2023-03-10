@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cart</title>
+    <title>cart page</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <!--bootstrap-->
     <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
     <!--fontawseom-->
     <link rel="stylesheet" href="vendor/css/all.min.css">
+   
+   
 
 
     <!--customized-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
 </head>
 <body  id="cart" class="cart-body">
     <!--start navbar-->
    <nav class="navbar navbar-expand-lg bg-white">
     <div class="container-fluid">
-        
+    
+
         <a class="register text-black " id="login-button" text-decoration="none" ref=#> تسجيل دخول </a>
-        <a href="cart.html" class="shop-btn button-text cart-color text-black"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
-          <!--navbar contents-->
+          <!--navbar contents--><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-3 mb-2 mb-lg-0 nav-ul  ">
           
@@ -51,140 +57,74 @@
   </nav>
    <!--end navbar-->
    <!--start cart-->
-   <div class="tbb container my-4">
-    <table class="table">
-        <thead>
-            <tr>
-                
-                <th scope="col">اسم المنتج</th>
-                <th scope="col">الكمية</th>
-                <th scope="col">السعر</th>
-                <th scope="col">صورة المنتج</th>
-
-            </tr>
-        </thead>
-        <tbody class="cart-item">
-            <tr class="cart-row">
-              
-                
-                <td class="cart-item-title">شمع معطر حجم كبير</td>
-                <td class="cart-quantity">
-                  <input class="cart-quantity-input" type="number" value="1">
-                </td>
-                <td class="cart-price">20.0₪</td>
-                <td class="img">
-                    <img src="img/p2.jpeg" class="cart-img"></td>
-                <td>
-                    
-                    <a href="#" class="btn btn-danger">حذف</a>
-
-              
-            </tr>
-            <tr class="cart-row">
-              
-                
-                <td class="cart-item-title"> لوحة خط حجم وسط</td>
-                <td class="cart-quantity">
-                  <input class="cart-quantity-input" type="number" value="1" >
-                </td>
-                <td class="cart-price">30.0₪</td>
-                <td class="img">
-                    <img src="img/best-paint-1.png" class="cart-img"></td>
-                <td>
-                    
-                    <a href="#" class="btn btn-danger">حذف</a>
-
-              
-            </tr>
-            <tr class="cart-row">
-              
-                
-                <td class="cart-item-title">خاتم فضي</td>
-                <td class="cart-quantity">
-                  <input class="cart-quantity-input" type="number" value="1">
-                </td>
-                <td class="cart-price">5.0₪</td>
-                <td class="img">
-                    <img src="img/acc6.jpeg" class="cart-img"></td>
-                <td>
-                    
-                    <a href="#" class="btn btn-danger">حذف</a>
-
-                
-            </tr>
-            <tr class="cart-row">
-                
-                <td class="cart-item-title">فواحات برائحة الفانيلا</td>
-                <td class="cart-quantity">
-                  <input class="cart-quantity-input" type="number" value="1">
-                </td>
-                <td class="cart-price">20.0₪</td>
-                <td class="img">
-                    <img src="img/fawwahat-2.png" class="cart-img"></td>
-                <td>
-    
-                    <a href="#" class="btn btn-danger">حذف</a>
-
-            </tr>
-        </tbody>
-    </table>
-    <div class="cart-total">
-      <strong class="cart-total-title">Total</strong>
-      <span class="cart-total-price">₪75.0</span>
-  </div>
-  <br/>
+   <section   class="payment " style="margin-top: 20px;">   <div class="row"  >
+    <div class="col-75 ">
+      <div class="container container-pay" style="direction: rtl;   display: flex; padding-left: 0px; justify-content: center; ">
+        <form class="pay-form" >
   
-  <button class="btn btn-primary btn-purchase" type="button">إتمام عملية الشراء</button>
-</div>
-</div>
+          <div  class="pay-div" style="overflow-x: auto;">
+            <div class="col-pay">
+                <h3 class="pay-head">المعلومات الشخصية </h3>
+                <label class="label-pay"for="fname" style="padding-top: 10px;">  الإسم الكامل  </label>
+                <input type="text" id="fname" name="firstname" placeholder="">
+                <label class="label-pay" for="phone" >رقم الهاتف </label>
+                <input  type="text" id="phone" name="phone" placeholder="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <label class="label-pay" for="adr">المدينة </label>
+                <input type="text" id="adr" name="address" placeholder="">
+                <label class="label-pay" for="city">العنوان</label>
+                <input type="text" id="city" name="city" placeholder="">
+                <label class="label-pay" for="info">معلومات إضافية </label>
+                <input type="text" id="info" name="info" placeholder="" size="50">
+                
+              </div>
+    
+            <div class="col-pay">
+              <h3 class="pay-head">طريقة الدفع </h3>
+              <label class="label-pay" for="fname">الخدمات المتوفرة </label>
+              <div class="icon-container">
+                <i class="fa-brands fa-cc-paypal" style="color:blue;"></i>
+                <i class="fa-brands fa-cc-visa" style="color:red;"></i>
+                <i class="fa-brands fa-cc-amex" style="color:orange;"></i>
+                <i class="fa-brands fa-cc-jcb" style="color: green;"></i>
+              </div>
+              <label class="label-pay" for="cname" ">الإسم في البطاقة</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe" >
+              <label class="label-pay" for="ccnum">رقم البطاقة</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" size="50">
+              <label class="label-pay" for="expmonth">تاريخ الإنتهاء</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+              <input type="submit" value="تأكيد الطلب" class="btn-pay"   onclick = "fun();" >
+
+            </div>
+         
+  
+          </div>
+          <label>
+            
+        </form>
+      </div>
+    </div>
+ </div>
+  </div>
+ 
+  <div class="loop-wrapper" >
+    <div class="mountain"></div>
+    <div class="hill"></div>
+    <div class="tree"></div>
+    <div class="tree"></div>
+    <div class="tree"></div>
+    <div class="rock"></div>
+    <div class="truck"></div>
+    <div class="wheels"></div>
+  </div> 
+  
+</section>
+
+
 
    <!--end cart-->
    <!--start footer-->
-   <footer class="footer " style="background-color:#bd946d; " >
-    <div class="container"  >
-      <div >
-        <div class="footer-col">
-          <h4 style="color:#614c40;"> تابعنا على مواقع التواصل الاجتماعي</h4>
-          <div class="social-links">
-            <a href="https://www.facebook.com/Fekrashop1" target="_blank"><i class="fab fa-facebook-f"style="color:#614c40;" ></i></a>
-            <a href="https://www.instagram.com/art.zainah/" target="_blank"><i class="fab fa-instagram" style="color:#614c40;" ></i></a>
-            <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=false&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAC4P4gYB2ijyM3W22rhoY40T2CJ-Iqt98I0&keywords=zainah%20abu%20abed&origin=RICH_QUERY_SUGGESTION&position=2&searchId=748ff0fc-6e3b-40a9-8794-c6a8ed323df5&sid=Q3z" target="_blank"><i class="fab fa-linkedin-in" style="color:#614c40;"></i></a>
-          </div>
-          
-        </div>
-        <div class="footer-col" >
-          <h4 style="color:#614c40">مساعدة</h4>
-          <ul>
-            <li><a href="#" style="color:#614c40;">أكثر الأسئلة المطروحة</a></li>
-            <li><a href="#" style="color:#614c40;">التوصيل</a></li>
-            <li><a href="#" style="color:#614c40;">سياسة الترجيع</a></li>
-            <li><a href="#" style="color:#614c40;">حالة الطلب</a></li>
-            <li><a href="#" style="color:#614c40;">خيارات الدفع</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 style="color:#614c40;"> المتجر</h4>
-          <ul>
-            <li><a href="products.html" style="color:#614c40;">شمع</a></li>
-            <li><a href="products.html" style="color:#614c40;">إكسسوارات</a></li>
-            <li><a href="products.html" style="color:#614c40;">لوحات الخط</a></li>
-            <li><a href="products.html" style="color:#614c40;">فواحات ومباخر</a></li>
-            <li><a href="products.html" style="color:#614c40;">كفرات</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4 style="color:#614c40;">متجر فكرة الإلكتروني</h4>
-          <ul>
-            <p class="about-us" style="color:#614c40;">عندما تشتري شيئاً صُنع باليد.. فَأنت لا تشتري مُجرد غرض!
-
-              بل مِئات الساعات و التجارب و الإحباط و الطموح، أنت تشتري جزءاً من روح و قطعة من حياة شخص آخر .. 
-              قطعة فريدة لا وجود لها عند أحد غيرك.. صنعت لك فقط 
-              </p>
-          </ul>
-        </div>
-      </div>
-    </div>
- </footer>
+   
    <!--end footer-->
 
     <!--login form-->
@@ -195,7 +135,7 @@
   <img class="icon-img"src="img/icon.jpeg" alt="">
 <p bold>تسجيل الدخول</p>
   <form action="">
-      <input class="form-input"type="text" placeholder="الاسم">
+      <input class="form-input"type="text" placeholder="الاسم" >
       <input class="form-input"type="password" placeholder="كلمة المرور">
 <br/>
       <a  href="#" class="Submit-button text-black me-2" style="text-decoration: none;">دخول</a>

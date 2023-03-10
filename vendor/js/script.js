@@ -1,3 +1,5 @@
+
+/* product page*/
 jQuery(function() {
     jQuery(".allbutton").click(function(){
         jQuery(".single").show();
@@ -19,7 +21,14 @@ for(let link of nav_link){
 document.getElementById('login-button').addEventListener("click", function() {
     document.querySelector('.login').style.display = "flex";
     document.querySelector('.form').style.display = "none";
-
+});
+document.getElementById('login-button').addEventListener("click", function() {
+  document.querySelector('.login').style.display = "flex";
+  document.querySelector('.pay-form').style.display = "none";
+});
+document.querySelector('.close-login').addEventListener("click", function() {
+  document.querySelector('.login').style.display = "none";
+  document.querySelector('.payment').style.display = "flex";
 });
 
 document.querySelector('.close-login').addEventListener("click", function() {
@@ -84,14 +93,15 @@ function quantityChanged(event){
   }
   updateCartTotal()
 }
+
 function addToCartClicked(event) {
   var button = event.target
-  var shopItem = button.parentElement
-  var title = shopItem.getElementsByClassName('card-title')[0].innerText
-  var price = shopItem.getElementsByClassName('price')[0].innerText
-  var imageSrc = shopItem.getElementsByClassName('product-image')[0].src
-  addItemToCart(title, price, imageSrc)
-  updateCartTotal()
+  var shopItem = button.parentElement;
+  var title = shopItem.getElementsByClassName('card-title')[0].innerText;
+  var price = shopItem.getElementsByClassName('price')[0].innerText;
+  var imageSrc = shopItem.getElementsByClassName('product-image')[0].src;
+  addItemToCart(title, price, imageSrc);
+  updateCartTotal();
 }
 function addItemToCart(title, price, imageSrc) {
   var cartRow = document.createElement('div')
@@ -104,17 +114,16 @@ function addItemToCart(title, price, imageSrc) {
           return
       }
   }
-  var cartRowContents = `
-  <td class="cart-item-title"> ${title}</td>
-                <td class="cart-quantity">
-                  <input class="cart-quantity-input" type="number" value="1">
-                </td>
-                <td class="cart-price">${price}</td>
-                <td class="img">
-                    <img src="${imageSrc}" class="cart-img"></td>
-                <td>
-                    
-                    <a href="#" class="btn btn-danger">حذف</a>`
+  var cartRowContents = ` 
+                    <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+                    <span class="cart-item-title">${title}</span>
+                </div>
+                <span class="cart-price cart-column">${price}</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>  `
   cartRow.innerHTML = cartRowContents
   cartItems.append(cartRow)
   cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
@@ -138,5 +147,10 @@ function addItemToCart(title, price, imageSrc) {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '₪' + total
 }
+function fun() {  
+  
+  
+  alert ("تمت عملية الطلب بنجاح");  
+}  
 /*finish cart page*/
   
