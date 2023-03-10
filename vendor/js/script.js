@@ -54,6 +54,10 @@ buttons.forEach(button => {
     document.querySelector('.cart-page').style.display = "flex";
     });
 });
+document.querySelector('.btn-purchase2').addEventListener("click", function() {
+  document.querySelector('.cart-page').style.display = "none";
+});
+
 /*end cart icon page*/
 
 /*start cart page*/
@@ -102,7 +106,7 @@ function quantityChanged(event){
 }
 function addToCartClicked(event) {
   var button = event.target
-  var shopItem = button.parentElement.parentElement
+  var shopItem = button.parentElement
   var title = shopItem.getElementsByClassName('card-title')[0].innerText
   var price = shopItem.getElementsByClassName('price')[0].innerText
   var imageSrc = shopItem.getElementsByClassName('product-image')[0].src
