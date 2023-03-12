@@ -5,7 +5,7 @@
 }
 body{
     font-family: cairo;
-    background-color:#fcf7f1 ;
+ 
     font-size: 70%;
     
 
@@ -317,10 +317,7 @@ align-items: center;
   margin: 20px auto 5px;
  margin-bottom: 15px;
   }
-section.best-sellers{
-    background-color:#ebddd2;
-  
-}
+
 
 section.best-sellers .nav-link{
     border: 2px solid  #ddb295;
@@ -1498,6 +1495,10 @@ justify-content: center;
     }
     .col-25 {
       margin-bottom: 20px;
+    }
+    .register{
+      position: absolute;
+      right: 260px;
     }
     
   
